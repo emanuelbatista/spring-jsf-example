@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>debug.single.main</actionName>
+            <packagings>
+                <packaging>*</packaging>
+            </packagings>
+            <goals>
+                <goal>spring-boot:run</goal>
+            </goals>
+            <properties>
+                <jpda.listen>maven</jpda.listen>
+                <Env.JAVA_HOME>/usr/lib/jvm/java-8-oracle</Env.JAVA_HOME>
+                <spring.profiles.active>dev</spring.profiles.active>
+            </properties>
+        </action>
+        <action>
+            <actionName>debug.single.deploy</actionName>
+            <packagings>
+                <packaging>war</packaging>
+            </packagings>
+            <goals>
+                <goal>spring-boot:run</goal>
+            </goals>
+            <properties>
+                <jpda.listen>maven</jpda.listen>
+                <Env.JAVA_HOME>/usr/lib/jvm/java-8-oracle</Env.JAVA_HOME>
+                <spring.profiles.active>dev</spring.profiles.active>
+                
+                
+                
+            </properties>
+        </action>
+        <action>
+            <actionName>debug</actionName>
+            <packagings>
+                <packaging>jar</packaging>
+            </packagings>
+            <goals>
+                <goal>spring-boot:run</goal>
+            </goals>
+            <properties>
+                
+                <Env.JAVA_HOME>/usr/lib/jvm/java-8-oracle</Env.JAVA_HOME>
+                
+                <jpda.listen>maven</jpda.listen>
+                
+                <spring.profiles.active>dev</spring.profiles.active>
+            </properties>
+        </action>
+        <action>
+            <actionName>run.single.deploy</actionName>
+            <packagings>
+                <packaging>war</packaging>
+            </packagings>
+            <goals>
+                <goal>spring-boot:run</goal>
+            </goals>
+            <properties>
+                <Env.JAVA_HOME>/usr/lib/jvm/java-8-oracle</Env.JAVA_HOME>
+                <spring.profiles.active>dev</spring.profiles.active>
+            </properties>
+        </action>
+        <action>
+            <actionName>run.single.main</actionName>
+            <packagings>
+                <packaging>*</packaging>
+            </packagings>
+            <goals>
+                <goal>spring-boot:run</goal>
+            </goals>
+            <properties>
+                <Env.JAVA_HOME>/usr/lib/jvm/java-8-oracle</Env.JAVA_HOME>
+                <spring.profiles.active>dev</spring.profiles.active>
+            </properties>
+        </action>
+        <action>
+            <actionName>run</actionName>
+            <packagings>
+                <packaging>war</packaging>
+                <packaging>ear</packaging>
+                <packaging>ejb</packaging>
+            </packagings>
+            <goals>
+                <goal>spring-boot:run</goal>
+            </goals>
+            <properties>
+                <Env.JAVA_HOME>/usr/lib/jvm/java-8-oracle</Env.JAVA_HOME>
+                <spring.profiles.active>dev</spring.profiles.active>
+            </properties>
+        </action>
+    </actions>
